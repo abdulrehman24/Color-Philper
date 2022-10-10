@@ -98,7 +98,7 @@ $(function () {
   else {
     $(sidebarMenuList).css('overflow', 'scroll');
     $(emailUserList).css('overflow', 'scroll');
-    // $(emailScrollArea).css('overflow-y', 'scroll');
+    $(emailScrollArea).css('overflow', 'scroll');
   }
 
   $(document).keyup(function (e) {
