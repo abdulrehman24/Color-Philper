@@ -74,7 +74,8 @@
 
 .email-application .content-area-wrapper .email-user-list {
   position: relative;
-  height: calc( 100% - calc(3.49rem + 3.32rem)); }
+  height: calc(
+ 100% - calc(3.49rem + 3.32rem)); }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list {
   padding: 0;
@@ -15232,7 +15233,7 @@
   line-height: 0; }
 
 .email-application .email-app-details .email-scroll-area .email-label {
-  margin: 2rem 0; }
+  margin: 1rem 0; }
 
 .email-application .email-app-details .email-scroll-area .email-info-dropup .dropdown-toggle::after {
   left: -2px;
