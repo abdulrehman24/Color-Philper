@@ -87,7 +87,7 @@
                                             class="feather feather-chevron-left font-medium-4">
                                             <polyline points="15 18 9 12 15 6"></polyline>
                                         </svg></span>
-                                    <h4 class="email-subject mb-0 text-center">Order List</h4>
+                                    <h4 class="email-subject mb-0 text-center">Create Item</h4>
                                 </div>
 
                             </div>
@@ -95,213 +95,134 @@
 
                             <!-- Detailed Email Content starts -->
                             <div class="email-scroll-area" style="overflow: auto;">
-                                <div class="row my-1 text-center">
-                                    <div class="col-12">
-                                        <a href="" target="" class="btn waves-effect waves-float waves-light"
-                                            style="color: rgb(89, 87, 199);background-color: white;"><i
-                                                class="far fa-plus-circle me-50"></i>Create Item</a>
-                                        <a href="" target="" class="btn waves-effect waves-float waves-light"
-                                            style="color: rgb(89, 87, 199);background-color: white;"><i
-                                                class="fal fa-pencil me-50"></i>Edit Items</a>
-                                    </div>
-                                </div>
+
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="card">
-                                            <div class="email-detail-head">
-                                                <div class="user-details d-flex justify-content-between flex-wrap">
+                                        <div class="card mt-1 basic-select2">
+                                            <div class="row ">
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class="p-50">
+                                                        <label class="form-label fw-bolder" for="basicInput">Ingredient Name</label>
+                                                        <input type="text" class="form-control" id="basicInput"
+                                                            placeholder="Enter email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                        <label class="form-label fw-bolder" for="basicInput">Ingredient Name In
+                                                            Arabic</label>
+                                                        <input type="text" class="form-control" id="basicInput"
+                                                            dir="rtl" placeholder="أدخل الاسم">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
 
-                                                    <div class="app-fixed-search d-flex align-items-center">
 
-                                                        <div
-                                                            class="d-flex align-content-center justify-content-between w-100">
-                                                            <div class="input-group input-group-merge">
-                                                                <span class="input-group-text"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                        height="14" viewBox="0 0 24 24" fill="none"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                                        class="feather feather-search text-muted">
-                                                                        <circle cx="11" cy="11" r="8"></circle>
-                                                                        <line x1="21" y1="21" x2="16.65" y2="16.65">
-                                                                        </line>
-                                                                    </svg></span>
-                                                                <input type="text" class="form-control"
-                                                                    id="email-search" placeholder="Search list"
-                                                                    aria-label="Search..."
-                                                                    aria-describedby="email-search">
+                                                    <!-- Basic -->
+                                                    <div class="p-50">
+                                                        <label class="form-label fw-bolder" for="select2-basic">Basic</label>
+                                                        <select class="select2 form-select" id="select2-basic">
+                                                            <option >Choose UOM</option>
+                                                            <option >1</option>
+                                                            <option >2</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                        <label class="form-label fw-bolder" for="basicInput">Price</label>
+                                                        <input type="number" class="form-control" id="basicInput"
+                                                            placeholder="Enter Price">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                        <label class="form-label fw-bolder" for="basicInput">Item Code (Optional)</label>
+                                                        <input type="text" class="form-control" id="basicInput"
+                                                            placeholder="Enter Price">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                        <label class="form-label fw-bolder fw-bolder" for="basicInput">Select branches</label>
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <label class="form-check-label mb-50" for="customSwitch10">Select All</label>
+                                                            <div class="form-check form-switch form-check-primary float-end ">
+                                                                <input type="checkbox" class="form-check-input" id="customSwitch10" checked />
+                                                                <label class="form-check-label" for="customSwitch10">
+                                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="email-label" style="margin-top: 0px;">
-                                            <span class="mail-label ">All Items(5)</span>
-                                            <span class="float-end text-primary"
-                                                style="text-decoration: underline;">Clear Selection</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <div class="card-header email-detail-head">
-                                                        <div class="user-details flex-wrap">
-
-                                                            <div class="mail-items">
-                                                                <h5 class="mb-0">Arwa water tray 24x500ml</h5>
-                                                                <div class="email-info-dropup dropdown">
-                                                                    <small
-                                                                        class="mail-date-time text-muted">SAR12.25/CTN
-                                                                        <span class="float-end"></span></small>
-                                                                </div>
-
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                        
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <label class="form-check-label mb-50" for="customSwitch10">(Chick-N-Bun - Malga) Layan Food Company-KSA</label>
+                                                            <div class="form-check form-switch form-check-primary float-end ">
+                                                                <input type="checkbox" class="form-check-input" id="customSwitch10" checked />
+                                                                <label class="form-check-label" for="customSwitch10">
+                                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                                </label>
                                                             </div>
-
                                                         </div>
-
-
                                                     </div>
                                                 </div>
-                                                <div class="col-5 mt-2">
-                                                    <div class="email-info-dropup dropdown ">
-                                                        <small class="mail-date-time d-flex"
-                                                            style="font-size: 1.2rem;"><i class="fal fa-minus-circle"
-                                                                style="margin-top:5px"></i>
-                                                            <span class="mx-75">0.000</span> <i
-                                                                class="fal fa-plus-circle"
-                                                                style="margin-top:5px"></i></small>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <div class="card-header email-detail-head">
-                                                        <div class="user-details flex-wrap">
-
-                                                            <div class="mail-items">
-                                                                <h5 class="mb-0">Arwa water tray 24x500ml</h5>
-                                                                <div class="email-info-dropup dropdown">
-                                                                    <small
-                                                                        class="mail-date-time text-muted">SAR12.25/CTN
-                                                                        <span class="float-end"></span></small>
-                                                                </div>
-
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
+                                                       
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <label class="form-check-label mb-50" for="customSwitch10">(Chick-N-Bun-Swaidi) Layan Food Company-KSA</label>
+                                                            <div class="form-check form-switch form-check-primary float-end ">
+                                                                <input type="checkbox" class="form-check-input" id="customSwitch10" checked />
+                                                                <label class="form-check-label" for="customSwitch10">
+                                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                                </label>
                                                             </div>
-
                                                         </div>
-
-
                                                     </div>
                                                 </div>
-                                                <div class="col-5 mt-2">
-                                                    <div class="email-info-dropup dropdown ">
-                                                        <small class="mail-date-time d-flex"
-                                                            style="font-size: 1.2rem;"><i class="fal fa-minus-circle"
-                                                                style="margin-top:5px"></i>
-                                                            <span class="mx-75">0.000</span> <i
-                                                                class="fal fa-plus-circle"
-                                                                style="margin-top:5px"></i></small>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <div class="card-header email-detail-head">
-                                                        <div class="user-details flex-wrap">
-
-                                                            <div class="mail-items">
-                                                                <h5 class="mb-0">Arwa water tray 24x500ml</h5>
-                                                                <div class="email-info-dropup dropdown">
-                                                                    <small
-                                                                        class="mail-date-time text-muted">SAR12.25/CTN
-                                                                        <span class="float-end"></span></small>
-                                                                </div>
-
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <label class="form-check-label mb-50" for="customSwitch10">(Chick-N-Bun- Rawaby) Layan Food Company-KSA</label>
+                                                            <div class="form-check form-switch form-check-primary float-end ">
+                                                                <input type="checkbox" class="form-check-input" id="customSwitch10" checked />
+                                                                <label class="form-check-label" for="customSwitch10">
+                                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                                </label>
                                                             </div>
-
                                                         </div>
-
-
                                                     </div>
                                                 </div>
-                                                <div class="col-5 mt-2">
-                                                    <div class="email-info-dropup dropdown ">
-                                                        <small class="mail-date-time d-flex"
-                                                            style="font-size: 1.2rem;"><i class="fal fa-minus-circle"
-                                                                style="margin-top:5px"></i>
-                                                            <span class="mx-75">0.000</span> <i
-                                                                class="fal fa-plus-circle"
-                                                                style="margin-top:5px"></i></small>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class=" p-50">
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <div class="card-header email-detail-head">
-                                                        <div class="user-details flex-wrap">
-
-                                                            <div class="mail-items">
-                                                                <h5 class="mb-0">Arwa water tray 24x500ml</h5>
-                                                                <div class="email-info-dropup dropdown">
-                                                                    <small
-                                                                        class="mail-date-time text-muted">SAR12.25/CTN
-                                                                        <span class="float-end"></span></small>
-                                                                </div>
-
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <label class="form-check-label mb-50" for="customSwitch10">(Chick-N-Bun-Ta'awon) Lavan Food Company-KSA</label>
+                                                            <div class="form-check form-switch form-check-primary float-end ">
+                                                                <input type="checkbox" class="form-check-input" id="customSwitch10" checked />
+                                                                <label class="form-check-label" for="customSwitch10">
+                                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                                </label>
                                                             </div>
-
                                                         </div>
-
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-5 mt-2">
-                                                    <div class="email-info-dropup dropdown ">
-                                                        <small class="mail-date-time d-flex"
-                                                            style="font-size: 1.2rem;"><i class="fal fa-minus-circle"
-                                                                style="margin-top:5px"></i>
-                                                            <span class="mx-75">0.000</span> <i
-                                                                class="fal fa-plus-circle"
-                                                                style="margin-top:5px"></i></small>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
+                               
                             </div>
                             <!-- Detailed Email Content ends -->
                         </div>
@@ -322,19 +243,9 @@
                 Task</a>
 
         </div>
-        <div class="card m-0">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-7">
-                        <h5 class="text-primary">Estimated Price</h5>
-                        <p class="fw-bolder">SAR0.00</p>
-                    </div>
-                    <div class="col-5">
-                        <button class="btn btn-secondary btn-icon" type="button" disabled>Review Order</button>
-                    </div>
-
-                </div>
-            </div>
+        <div class="row p-1">
+            <button class="btn btn-primary btn-icon" type="button" >Save</button>  
+        </div>
 
         </div>
         <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
@@ -360,6 +271,7 @@
 
         <!-- BEGIN: Page JS-->
         <script src="js/scripts/pages/app-email.js"></script>
+        <script src="js/scripts/forms/form-select2.js"></script>
         <!-- END: Page JS-->
 
         <script>
